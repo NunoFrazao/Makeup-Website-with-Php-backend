@@ -1,0 +1,538 @@
+/* ------------ TAGS NORMAIS ------------ */
+
+hr {							/* SEPARATOR HR */
+	display: none;
+	width: 80vw;
+}
+
+div#background-unhas {			/* DIV BACKGROUND UNHAS */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("../../img/nuno/UnhasFinal3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left center;
+}
+
+/* ------------------------ FIRST MAIN DIV ------------------------ */
+
+div#div-marc-unhas {			/* DIV MARC UNHAS */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	pointer-events: none;
+}
+
+div#inside-info-unhas h1#marc-h1,
+div#inside-info-unhas p#marc-paragraph {		/* DIV INSIDE INFO TITLE H1 AND PARAGRAPH */
+	height: 0px;
+	overflow-y: hidden;
+	pointer-events: none;
+}
+
+div#fullpage div#section1 {
+	overflow-x: hidden;
+	margin-top: -10vh;
+}
+
+div#unhas-first-content div.div-info-unhas {				/* DIV INFO UNHAS */
+	height: 100vh;
+}
+
+div#div-marc-unhas div#inside-info-unhas p#marc-paragraph {			/* DIV INSIDE PARAGRAPH */
+	line-height: 2rem;
+}
+
+div#unhas-first-content div#inside-info-unhas button#btn-unhas-marcacoes {			/* BUTTON UNHAS MARCACOES */
+	position: relative;
+	width: 200px;
+	height: 0px;
+	padding: 5px 20px;
+	border: none;
+	border-radius: 100px;
+	overflow-y: hidden;
+	opacity: 0;
+	cursor: pointer;
+	pointer-events: all;
+	color: white;
+	font-size: 1rem;
+	letter-spacing: 2px;
+	background-color: #bb3838;
+	transition: width .3s;
+}
+
+div#unhas-first-content button#btn-unhas-marcacoes i {		/* BUTTON UNHAS MARCACOES ICON */
+	position: absolute;
+	top: 13px;
+	right: 10%;
+	font-size: 0.8rem;
+	transition: right .3s;
+}
+
+/* ------------------------ SECOND MAIN DIV ------------------------ */
+
+div#unhas-tipo-info {			/* DIV UNHAS TIPO INFO */
+	width: 60vw;
+	height: 100vh;
+	margin-top: 3.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+}
+
+div#unhas-tipo-info div#title-gel {					/* DIV TITLE GEL */
+	width: 100%;
+	height: 3.5rem;
+	margin-bottom: 5vh;
+	overflow: hidden;
+}
+
+div#unhas-tipo-info h1#principal-gel-h1 {		/* DIV UNHAS TIPO TITLE H1 */
+	position: relative;
+	width: 100%;
+	height: 0px;
+	overflow: hidden;
+	font-size: 3rem;
+	text-align: center;
+	transition: .5s;
+}
+
+div#unhas-tipo-info div#unhas-img {					/* DIV UNHAS IMG */
+	position: relative;
+}
+
+div#unhas-tipo-info div#unhas-img img {				/* DIV UNHAS IMG IMAGE */
+	position: relative;
+	width: 100%;
+	border-radius: 30px;
+}
+
+div#unhas-tipo-info div#text-side-unhas p {			/* DIV TEXT SIDE PARAGRAPH */
+	position: relative;
+	width: 75%;
+	margin: 0;
+	font-size: 1.1rem;
+}
+
+div#unhas-tipo-info div#text-side-unhas a#anc-gal {			/* DIV TEXT SIDE ANCORA */
+	position: absolute;
+	width: 200px;
+	bottom: -50px;
+	right: 0;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 100px;
+	cursor: pointer;
+	pointer-events: all;
+	text-align: center;
+	color: white;
+	font-size: 1rem;
+	letter-spacing: 2px;
+	background-color: #bb3838;
+	transition: all .3s;
+}
+
+div#unhas-tipo-info div#text-side-unhas a#anc-gal i {		/* DIV TEXT SIDE ANCORA ICON */
+	position: absolute;
+	top: 13px;
+	right: 10%;
+	font-size: 0.8rem;
+	transition: right .3s;
+}
+
+div#unhas-tipo-info div.gel-info {			/* DIV GEL INFO */
+	margin-top: 3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/* ------------------------ THIRD MAIN DIV ------------------------ */
+
+div#unhas-gel-ext {			/* DIV UNHAS GEL EXT */
+	width: 80vw;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+	transition: width .3s;
+}
+
+div#unhas-gel-ext div#title-others {					/* DIV TITLE GEL */
+	width: 100%;
+	height: 3.5rem;
+	margin-bottom: 5vh;
+	overflow: hidden;
+}
+
+div#unhas-gel-ext h1#verniz-gel-h2 {			/* DIV UNHAS TIPO TITLE H1 */
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	font-size: 3rem;
+	text-align: center;
+	transition: .5s;
+}
+
+div#unhas-gel-ext div.bordas {					/* DIV BORDAS */
+	border-right: 1px solid #dee2e6;
+}
+
+div#unhas-gel-ext div.first-border {			/* DIV FIRST BORDER */
+	height: 100%;
+	padding: 5px 30px;
+}
+
+div#unhas-gel-ext div.first-border img {		/* DIV UNHAS GEL EXT IMAGES */
+	width: 100%;
+	height: 40vh;
+	object-fit: cover;
+	border-radius: 5px;
+	object-position: center;
+}
+
+div#unhas-gel-ext div.first-border h1 {			/* DIV FIRST BORDER TITLE H1 */
+	margin-top: 40px;
+	text-align: center;
+	font-size: 1.5rem;
+	pointer-events: none;
+	color: #bb3838;
+}
+
+div#unhas-gel-ext div.first-border p {			/* DIV FIRST BORDER PARAGRAPH */
+	height: 120px;
+	margin-top: 40px;
+	text-align: justify;
+	line-height: 1.7rem;
+	align-self: flex-end;
+}
+
+div#unhas-gel-ext div.first-border span {		/* DIV FIRST BORDER SPAN */
+	font-weight: bold;
+}
+
+/* ------------------------ SVG SIDE BAR ------------------------ */
+
+svg#svg-bar {							/* SVG BAR */
+	position: fixed;
+	height: 93vh;
+	z-index: 1;
+	pointer-events: none;
+	transition: margin .3s;
+}
+
+svg#svg-bar text {						/* SVG BAR TEXT TAGS */
+	fill: #bbbbbb;
+	cursor: pointer;
+}
+
+svg#svg-bar text.numbers {				/* SVG BAR NUMBERS */
+	fill: #bbbbbb;
+	cursor: pointer;
+	pointer-events: all;
+}
+
+svg#svg-bar line {						/* SVG BAR LINES */
+	stroke: #bbbbbb;
+}
+
+svg#svg-bar line#lin1 {					/* SVG BAR LINE 1 */
+	stroke: rgba(187, 56, 56, .65);
+}
+
+svg#svg-bar text.titles {				/* SVG BAR TITLES */
+	cursor: pointer;
+	pointer-events: all;
+}
+
+svg#svg-bar text#svg-text1 {			/* SVG BAR TEXT 1 */	
+	fill: rgba(187, 56, 56, .65);
+	font-weight: bold;
+}
+
+svg#svg-bar text#num1 {					/* SVG BAR NUM 1 */	
+	fill: rgba(187, 56, 56, .65);
+	font-weight: bold;
+}
+
+
+/* ------------ ON HOVER ------------ */
+
+div#unhas-first-content button#btn-unhas-marcacoes:hover,
+div#unhas-tipo-info div#text-side-unhas a#anc-gal:hover {		/* ANC AND BUTTON ON HOVER */
+	outline: none;
+	box-shadow: 0 0 0 0.2rem rgba(197, 36, 36, .25);
+	text-decoration: none;
+}
+
+div#unhas-first-content button#btn-unhas-marcacoes:hover i,
+div#unhas-tipo-info div#text-side-unhas a#anc-gal:hover i {		/* ANC AND BUTTON ON HOVER */
+	right: 5%;
+}
+
+/* ------------ ON FOCUS ------------ */
+
+div#unhas-first-content button#btn-unhas-marcacoes:focus {		/* BUTTON ON FOCUS */
+	outline: none;
+}
+
+div.first-border div.btn-icon button:focus {					/* DIV BTN-ICON BUTTON ON FOCUS */
+	box-shadow: none;
+}
+
+
+/* ------------ ON FOCUS ------------ */
+
+div.first-border div.btn-icon button:active {					/* DIV BTN-ICON BUTTON ON ACTIVE */
+	box-shadow: 0 0 0 0.2rem rgba(105, 105, 105, 0.25);
+}
+
+
+/* ------------ MEDIA RESPONSIVE ------------ */
+
+@media (max-width: 1440px) {						/* MEDIA MAX WIDTH 1440PX */
+	div#unhas-tipo-info h1#principal-gel-h1,
+	div#unhas-gel-ext h1#verniz-gel-h2 {
+		font-size: 2.3rem;
+	}
+
+	div#unhas-tipo-info div#text-side-unhas h2#verniz-gel-h2 {
+		margin-top: 0;
+	}
+
+	div#unhas-tipo-info div#text-side-unhas p {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 1330px) {
+	div#inside-info-unhas h1#marc-h1 {				/* MEDIA MAX WIDTH 1330PX */
+		width: 400px;
+		font-size: 2rem;
+	}
+
+	div#inside-info-unhas p#marc-paragraph {
+		font-size:0.8rem;
+	}
+}
+
+@media (max-width: 1300px) {						/* MEDIA MAX WIDTH 1300PX */
+	div#background-unhas {
+		height: 70vh;
+		background-position: center bottom;
+	}
+
+	div#unhas-first-content div.div-info-unhas {
+		height: 70vh;
+	}
+
+	div#unhas-tipo-info div#text-side-unhas a#anc-gal {
+		bottom: -15%;
+	}
+}
+
+@media (max-width: 1200px) {						/* MEDIA MAX WIDTH 1200PX */
+	div#unhas-tipo-info {
+		width: 70vw;
+		height: 100vh;
+		margin-top: 6rem;
+	}
+
+	svg#svg-bar {
+		margin-left: -35px;
+	}
+
+	div#unhas-tipo-info div#unhas-img {
+		height: 35vh;
+		margin: 15vh 0;
+		display: flex;
+		justify-content: center;
+	}
+
+	div#unhas-tipo-info div#unhas-img img {
+		width: 80%;
+		object-fit: cover;
+	}
+
+	div#unhas-tipo-info div#text-side-unhas p {
+		width: 100%;
+	}
+
+	div#unhas-tipo-info div#text-side-unhas a#anc-gal {
+		bottom: -50px;
+	}
+}
+
+@media (max-width: 1065px) {						/* MEDIA MAX WIDTH 1065PX */
+	div#unhas-tipo-info h1#principal-gel-h1,
+	div#unhas-gel-ext h1#verniz-gel-h2 {
+		font-size: 2rem;
+	}
+}
+
+@media (min-width: 991px) {							/* MEDIA MIN WIDTH 991PX */
+	div#div-marc-unhas {
+		margin-left: 16.666667%;
+	}
+}
+
+@media (max-width: 992px) {							/* MEDIA MAX WIDTH 992PX */
+	svg#svg-bar {
+		display: none;
+	}
+
+	div#div-marc-unhas div#inside-info-unhas {
+		padding: 0;
+	}
+
+	div#div-marc-unhas {
+		margin-left: 8.333337%;
+	}
+
+	div#unhas-gel-ext div.bordas {
+		border: none;	
+	}
+
+	div#unhas-gel-ext div.first-border:not(:last-child) {
+		margin-bottom: 100px;
+	}
+
+	div#unhas-gel-ext div.first-border:last-child {
+		margin-bottom: 50px;
+	}
+
+	div#unhas-gel-ext div.first-border p {
+		height: initial;
+	}
+}
+
+@media (max-width: 795px) {							/* MEDIA MAX WIDTH 795PX */
+	div#unhas-tipo-info {
+		height: auto;
+		margin-top: 80px;
+	}
+
+	div#unhas-tipo-info div#title-gel {
+		height: auto;
+		margin-top: 0;
+	}
+
+	div#unhas-tipo-info div#unhas-img {
+		display: none;
+	}
+
+	div#unhas-gel-ext {
+		margin-top: 100px;
+	}
+
+	div#unhas-gel-ext div.first-border img {
+		height: 200px;
+	}
+
+	hr#hr3 {
+		margin-top: 150px;
+	}
+}
+
+@media (max-width: 767px) {							/* MEDIA MAX WIDTH 767PX */
+	div#fullpage div#section3 {
+		margin-top: 50px;
+	}
+
+	div#background-unhas {
+		background-image: url("../../img/nuno/UnhasFinal.jpg");
+		background-position: bottom center;
+		height: 40vh;
+	}
+
+	div#unhas-first-content div.div-info-unhas {
+		width: 70vw;
+		height: 30vh;
+		margin: 40vh auto 0 auto;
+	}
+
+	div#div-marc-unhas {
+		margin-left: 0;
+	}
+
+	div#unhas-first-content div#inside-info-unhas button#btn-unhas-marcacoes {
+		float: right;
+	}
+
+	div#unhas-tipo-info h1#princiunhas-gel-ext,
+	div#unhas-tipo-info h1#verniz-gel-h2 {
+		margin-top: 5vh;
+	}
+
+	hr {
+		display: inherit;
+	}
+}
+
+@media (max-width: 500px) {							/* MEDIA MAX WIDTH 500PX */
+	div#unhas-tipo-info div#unhas-img {
+		height: 20vh;
+		margin-bottom: 0;
+	}
+
+	div#unhas-tipo-info div#text-side-unhas a#anc-gal {
+		width: 100%;
+	}
+
+	div#unhas-first-content div#inside-info-unhas button#btn-unhas-marcacoes {
+		width: 100%;
+	}
+	
+	div#inside-info-unhas h1#marc-h1 {
+		width: auto;
+		margin-bottom: 0px;
+		font-size: 1.3rem;
+	}
+
+	div#inside-info-unhas p#marc-paragraph {
+		font-size: 0.8rem;
+	}
+
+	div#unhas-tipo-info h1#principal-gel-h1,
+	div#unhas-gel-ext h1#verniz-gel-h2 {
+		margin-top: 0;
+	}
+
+	div#unhas-tipo-info h1#principal-gel-h1,
+	div#unhas-tipo-info h1#verniz-gel-h2 {
+		font-size: 1.5rem;
+	}
+
+	div#unhas-tipo-info div#text-side-unhas h2#verniz-gel-h2 {
+		font-size: 1.3rem;
+	}
+
+	div#unhas-tipo-info div#text-side-unhas p {
+		font-size: 0.8rem;
+	}
+
+	div#unhas-first-content div#inside-info-unhas button#btn-unhas-marcacoes,
+	div#unhas-tipo-info div#text-side-unhas a#anc-gal {
+		font-size: 0.7rem;
+	}
+
+	div#div-marc-unhas div#inside-info-unhas p#marc-paragraph {
+		line-height: 1rem;
+		margin-bottom: 0;
+	}
+
+	div#unhas-tipo-info div#text-side-unhas a#anc-gal i {
+		top: 5px;
+	}
+
+	div#unhas-gel-ext {
+		width: auto;
+	}
+}

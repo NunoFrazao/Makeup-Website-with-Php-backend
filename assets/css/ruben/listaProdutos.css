@@ -1,0 +1,487 @@
+div#back {
+    position: fixed;
+    left: 5%;
+    top: 14%;
+}
+
+div#back a#backBtn {
+    font-size: 2.5em;
+    color: #ce4646;
+    display: inline-block;
+}
+
+div#back a#backBtn:hover {
+    color: #bb3838;
+}
+
+div#back h1 {
+    font-size: 2rem;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+div#listaProdutosMain a.productCard {
+    color: black;
+    text-decoration: none;
+}
+
+div#listaProdutosMain div.card:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+div#listaProdutosMain div.card:active {
+    transform: scale(1);
+}
+
+div#listaProdutosMain img.produtoImagem {
+    width: 100%;
+    height: 8vw;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+div#listaProdutosMain div.card {
+    border-radius: 15px;
+}
+
+div#listaProdutosMain div.card h5.marcaProduto{
+    font-size: 1.1rem;
+}
+
+div#listaProdutosMain div.card p.nomeProduto{
+    font-size: 1.5rem;
+}
+
+div#listaProdutosMain div.precoProduto{
+    font-size: 1.5rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top: none;
+}
+
+div#listaProdutosMain div.precoProduto p.preco{
+    font-size: 2rem;
+    color: #bb3838;
+}
+
+/*
+* ------------- FILTROS --------------
+*/
+
+
+div#filtrosListaProdutos p{
+    font-size: 1.6rem;
+}
+
+div#filtrosListaProdutos div.dropdown button {
+    background-color: transparent;
+    width: 10vw;
+    color: #495057;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: initial;
+    font-size: 1.25rem;
+    padding-left: 0;
+}
+
+div#filtrosListaProdutos div.dropdown button::after {
+    content: none;
+    display: none;
+}
+
+div#filtrosListaProdutos div.dropdown button span {
+    float: right;
+}
+
+div#filtrosListaProdutos div.dropdown button:hover {
+    color: #bb3838;
+    border-bottom-color: #bb3838;
+}
+
+div#filtrosListaProdutos div.dropdown button:focus {
+    box-shadow: none;
+}
+
+div#filtrosListaProdutos div.dropdown-menu div.checkboxContainer {
+    padding: 0 10px;
+}
+
+div#filtrosListaProdutos div.dropdown-menu div.checkboxContainer input{
+    margin-left: 5px;
+}
+
+div#filtrosListaProdutos div.dropdown-menu div.checkboxContainer label{
+    font-size: 1.1rem;
+}
+
+
+/* SCROLL BAR FILTROS */
+
+
+/* width */
+div#filtrosListaProdutos ::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+div#filtrosListaProdutos ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+div#filtrosListaProdutos ::-webkit-scrollbar-thumb {
+    background: #ea7d7d;
+    border-radius: 6px;
+}
+
+/* Handle on hover */
+div#filtrosListaProdutos ::-webkit-scrollbar-thumb:hover {
+    background: #bb3838;
+}
+
+
+/* FILTRO MARCA */
+
+
+/* Seta do dropdown */
+div#filtrosListaProdutos div#filtroMarcaContainer button#filtroMarcaButton i {
+    transition: transform .2s ease-out;
+}
+
+/* Rodar seta do dropdown */
+div#filtrosListaProdutos div#filtroMarcaContainer button#filtroMarcaButton i.rodar {
+    transform: rotate(180deg);
+}
+
+div#filtrosListaProdutos div#filtroMarca {
+    min-width: max-content;
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 10;
+}
+
+/* Alterar a label (container) */
+div#filtrosListaProdutos div#filtroMarca label.checkboxContainer {
+    display: block;
+    position: relative;
+    margin-bottom: 5px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    padding: 5px 25px 5px 55px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Esconder a checkbox default do browser */
+div#filtrosListaProdutos div#filtroMarca label.checkboxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Criar custom checkbox */
+div#filtrosListaProdutos div#filtroMarca label.checkboxContainer span.checkboxCheckmark {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+/* Alterar a cor da checkbox on mouseover */
+div#filtrosListaProdutos div#filtroMarca label.checkboxContainer:hover input ~ span.checkboxCheckmark {
+    background-color: #ccc;
+}
+
+/* Alterar a backgroudn color da label on mouseover */
+div#filtrosListaProdutos div#filtroMarca label.checkboxContainer:hover {
+    background-color: #fdf4f3;
+}
+
+/* Alterar a cor da checkbox quando checked */
+div#filtrosListaProdutos div#filtroMarca label.checkboxContainer input:checked ~ span.checkboxCheckmark {
+    background-color: #b86b77;
+}
+
+/* Criar a checkmark/indicador */
+div#filtrosListaProdutos div#filtroMarca label.checkboxContainer span.checkboxCheckmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Mostar o indicador quando a checkbox está checked */
+div#filtrosListaProdutos div#filtroMarca label.checkboxContainer input:checked ~ span.checkboxCheckmark::after {
+    display: block;
+}
+
+/* Formatar a checkmark/indicador */
+div#filtrosListaProdutos div#filtroMarca label.checkboxContainer span.checkboxCheckmark::after {
+    left: 9px;
+    top: 5px;
+    width: 8px;
+    height: 13px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+
+
+/* FILTRO ORDENAR POR */
+
+
+/* Seta do dropdown */
+div#filtrosListaProdutos div#filtroOrdenarPorContainer button#filtroOrdenarPorButton i {
+    transition: transform .2s ease-out;
+}
+
+/* Rodar seta do dropdown */
+div#filtrosListaProdutos div#filtroOrdenarPorContainer button#filtroOrdenarPorButton i.rodar {
+    transform: rotate(180deg);
+}
+
+div#filtrosListaProdutos div#filtroOrdenarPor {
+    min-width: max-content;
+    z-index: 10;
+}
+
+/* Formatar a label (container) */
+div#filtrosListaProdutos div#filtroOrdenarPor label.radioContainer {
+    display: block;
+    position: relative;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    padding: 5px 25px 5px 55px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Esconder o botão radio default */
+div#filtrosListaProdutos div#filtroOrdenarPor label.radioContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Criar custom radio button */
+div#filtrosListaProdutos div#filtroOrdenarPor label.radioContainer span.radioCheckmark {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee; 
+    border-radius: 50%;
+}
+
+/* Alterar a cor de background do radio button on mouseover */
+div#filtrosListaProdutos div#filtroOrdenarPor label.radioContainer:hover input ~ span.radioCheckmark {
+    background-color: #ccc;
+}
+
+/* Quando o radio button é selecionado, alterar cor de background */
+div#filtrosListaProdutos div#filtroOrdenarPor label.radioContainer input:checked ~ span.radioCheckmark {
+    background-color: #b86b77;
+}
+
+/* Criar indicador (ponto)  */
+div#filtrosListaProdutos div#filtroOrdenarPor label.radioContainer span.radioCheckmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Mostrar indicador (ponto) quando selecionado */
+div#filtrosListaProdutos div#filtroOrdenarPor label.radioContainer input:checked ~ span.radioCheckmark::after {
+    display: block;
+}
+
+/* Formartar o indicador (ponto) */
+div#filtrosListaProdutos div#filtroOrdenarPor label.radioContainer span.radioCheckmark::after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* --------------------------------------------------------------------------- MEDIA RESPONSIVE ------------------------------------------------------------------------------------- */
+
+/* ------------------------ MIN WIDTH: 1650PX ------------------------*/
+
+@media (min-width: 1650px) {
+    div#filtrosCollapse {
+        position: fixed;
+        max-width: max-content;
+        top: 50%;
+        left: 4%;
+        transform: translateY(-50%);
+    }
+}
+
+/* ------------------------ MAX WIDTH: 1650PX ------------------------*/
+
+@media (max-width: 1649.98px) {
+    div#back {
+        position: absolute;
+    }
+
+    div#filtrosListaProdutos {
+        position: relative;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: 2rem auto 0 auto;
+        text-align: center;
+    }
+
+    div#filtrosListaProdutos p#filtrarPor-title {
+        display: none;
+    }
+
+    div#filtrosListaProdutos div.dropdown {
+        margin: 0 20px 0 20px !important;
+        display: inline-block;
+    }
+
+    div#filtrosListaProdutos div.dropdown button {
+        width: 170px;
+    }
+}
+
+/* -------------------------- MAX WIDTH: 1200PX --------------------------*/
+
+@media (max-width: 1199.98px) {
+    div#listaProdutosMain {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    div#listaProdutosMain img.produtoImagem {
+        height: 10vw;
+    }
+}
+
+/* ------------------------- MAX WIDTH: 992PX ------------------------------ */
+
+@media (max-width: 991.98px) {
+    div#back {
+        position: relative;
+        top: 0;
+        left: 1rem;
+    }
+
+    div#back h1 {
+        font-size: 1.8rem;
+    }
+
+    div#filtrosCollapse {
+        margin-bottom: 1.7rem;
+        padding-top: 0;
+    }
+
+    div#filtrosListaProdutos {
+        margin-top: 0;
+    }
+
+    div#listaProdutosMain img.produtoImagem {
+        height: 15vw;
+    }
+
+    div#listaProdutosMain div.card p.nomeProduto{
+        font-size: 1.1rem;
+    }
+
+    div#listaProdutosMain div.precoProduto p.preco{
+        font-size: 1.5rem;
+    }
+}
+
+/* ------------------------- MAX WIDTH: 576PX ------------------------------ */
+
+
+@media (max-width: 575.98px) {
+    div#back a#backBtn {
+        font-size: 2.25em;
+    }
+
+    div#listaProdutosMain img.produtoImagem {
+        height: 22vw;
+    }
+
+    /*
+    * FILTROS
+    */
+
+    div#filtrosCollapse {
+        padding: 0;
+    }
+
+    /* BOTAO */
+
+    div#filtrosCollapse button#expandirFiltrosButton {
+        position: absolute;
+        top: -43px;
+        right: 15px;
+        font-size: 1.5rem;
+        border: none;
+    }
+
+    div#filtrosCollapse button#expandirFiltrosButton span {
+        color: #6c757d;
+    }
+
+    div#filtrosCollapse button#expandirFiltrosButton i {
+        color: #bb3838;
+    }
+
+    /* CONTAINER DOS DROPDOWNS */
+
+    div#filtrosListaProdutos {
+        margin-top: 1rem;
+    }
+
+    div#filtrosListaProdutos div.dropdown {
+        display: block;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    div#filtrosListaProdutos div.dropdown button {
+        width: 100%;
+    }
+
+    div#filtrosListaProdutos div#filtroMarca, div#filtrosListaProdutos div#filtroOrdenarPor {
+        width: 100%;
+        max-height: fit-content;
+        border-color: #bb3838;
+    }
+
+    div#filtrosListaProdutos div#filtroMarcaContainer {
+        margin-bottom: 2rem !important;
+    }
+
+    div#filtrosListaProdutos div#filtroOrdenarPorContainer {
+        margin-top: 2rem !important;
+        margin-bottom: 1rem !important;
+    }
+}

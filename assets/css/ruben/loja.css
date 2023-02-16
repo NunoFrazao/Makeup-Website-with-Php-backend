@@ -1,0 +1,107 @@
+div#lojaContainer {
+    width: 70vw;
+}
+
+div#lojaContainer div.categoriaCima, div#lojaContainer div.categoriaBaixo {
+    position: relative;
+    padding: 10px;
+    transition: transform .1s ease-out;
+    opacity: .9;
+}
+
+div#lojaContainer div.categoriaCima {
+    height: 53vh;
+}
+
+div#lojaContainer div.categoriaBaixo {
+    height: 27vh;
+}
+
+div#lojaContainer div.categoriaCima img.lojaImg, div#lojaContainer div.categoriaBaixo img.lojaImg {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+div#lojaContainer div.categoriaCima:hover {
+    opacity: 1;
+    transform: translateY(-2%);
+}
+
+div#lojaContainer div.categoriaBaixo:hover {
+    opacity: 1;
+    transform: translateY(3%);
+}
+
+div#lojaContainer div.categoriaCima:active { 
+    transform: translateY(-2%);
+    transform: scale(.99);
+}
+
+div#lojaContainer div.categoriaBaixo:active {
+    transform: translateY(3%);
+    transform: scale(.99);
+}
+
+div#lojaContainer div.categoriaCima h2.imgTitle, div#lojaContainer div.categoriaBaixo h2.imgTitle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    color: rgba(0, 0, 0, .8);
+    background-color: rgba(255, 255, 255, .6);
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: opacity .3s ease-out;
+}
+
+div#lojaContainer div.categoriaCima:hover h2.imgTitle, div#lojaContainer div.categoriaBaixo:hover h2.imgTitle{
+    opacity: .9;
+}
+
+div#lojaContainer div.categoriaCima h2.imgTitle {
+    font-size: 2.5rem;
+}
+
+div#lojaContainer div.categoriaBaixo h2.imgTitle {
+    font-size: 1.75rem;
+}
+
+/* -------------------- MEDIA RESPONSIVE -------------------------- */
+
+
+/* ------------------- MAX WIDTH: 1200PX --------------------- */
+
+@media (max-width: 1199.98px) {
+    div#lojaContainer {
+        width: 90vw;
+    }
+}
+
+/* ----------------------- MAX WIDTH: 768PX ---------------------- */
+
+@media (max-width: 767.98px) {
+    div#lojaContainer {
+        width: 90vw;
+    }
+
+    div#lojaContainer div.categoriaCima {
+        height: 33vh;
+    }
+    
+}
+
+/* --------------------- MAX WIDTH: 576PX --------------------------- */
+
+@media (max-width: 575.98px) {
+    div#lojaContainer div.categoriaCima {
+        height: 23vh;
+    }
+
+    div#lojaContainer div.categoriaBaixo {
+        height: 19vh;
+    }
+}

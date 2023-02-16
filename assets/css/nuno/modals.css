@@ -1,0 +1,262 @@
+/* ------------------------ MODAL VER DESCRICAO ------------------------ */
+
+div#modal-ver-desc.show {
+	display: flex !important;
+	align-items: center;
+}
+
+div#modal-ver-desc div.modal-dialog {
+	max-width: 30vw;
+}
+
+div#modal-ver-desc div.modal-content {
+	width: 30vw;
+}
+
+div#modal-ver-desc div.modal-body textarea {
+	height: 150px;
+	resize: none;
+}
+
+div#modal-ver-desc div.modal-footer button {
+	background-color: #ea7d7d;
+	border-color: #ea7d7d;
+}
+
+div#modal-ver-desc h5#h5-title {
+	font-weight: bold;
+}
+
+div#modal-ver-desc div#body-ver {
+	padding: 10px 20px 40px 20px;
+}
+
+div#modal-ver-desc div#body-ver label:not(:first-child) {
+	margin-top: 20px;
+}
+
+div#modal-ver-desc div.modal-body textarea:disabled,
+div#modal-ver-desc div.modal-body input:disabled {
+	background-color: #fff;
+}
+
+/* ------------------------ MODAL EDITAR DESCRICAO ------------------------ */
+
+div#modal-editar-desc.show {
+	display: flex !important;
+	align-items: center;
+}
+
+div#modal-editar-desc div.modal-dialog {
+	max-width: 30vw;
+}
+
+div#modal-editar-desc div.modal-content {
+	width: 30vw;
+}
+
+div#modal-editar-desc div.modal-body textarea {
+	height: 150px;
+	resize: none;
+}
+
+div#modal-editar-desc div.modal-footer button {
+	background-color: #ea7d7d;
+	border-color: #ea7d7d;
+}
+
+div#modal-editar-desc h5#h5-title-edit {
+	font-weight: bold;
+}
+
+div#modal-editar-desc div#body-edit {
+	padding: 10px 20px 40px 20px;
+}
+
+div#modal-editar-desc div#body-edit label:not(:first-child) {
+	margin-top: 20px;
+}
+
+/* ------------------------ MODAL VER EVENT ------------------------ */
+
+div#modalClickDay.show {
+	display: flex !important;
+	align-items: center;
+}
+
+div#modalClickDay div.modal-dialog {
+	max-width: 30vw;
+}
+
+div#modalClickDay div.modal-content {
+	width: 30vw;
+}
+
+div#modalClickDay h5#title-modal {
+	font-weight: bold;
+}
+
+div#modalClickDay div#body-content {
+	padding: 10px 20px 40px 20px;
+}
+
+div#modalClickDay div#body-content form#form-see-event {
+	width: 100%;
+}
+
+div#modalClickDay div#body-content label:not(:first-child) {
+	margin-top: 20px;
+}
+
+div#modalClickDay div#body-content textarea#inp-nome {
+	height: 120px;
+	resize: none;
+}
+
+div#modalClickDay div.modal-footer button#btn-atualizar {
+	background-color: #ea7d7d;
+	color: #fff;
+}
+
+div#modalClickDay div.modal-footer button#btn-eliminar {
+	background-color: #ce4646;
+	color: #fff;
+}
+
+div#modalClickDay div.modal-footer button#btn-cancelar {
+	border-color: #ea7d7d;
+	color: #ea7d7d;
+}
+
+div#modalClickDay div.modal-footer div#hidden-info {
+	width: 100%;
+	margin-top: 20px;
+	display: none;
+	text-align: center;
+}
+
+div#modalClickDay div.modal-footer div#hidden-info span {
+	width: 100%;
+	margin-top: 20px;
+	text-align: center;
+}
+
+div#modalClickDay div.modal-footer div#hidden-info button#conf {
+	color: red;
+}
+
+
+/* ------------------------ MODAL ADD IMG GALERIA ------------------------ */
+
+div#modal-add-foto form#form-add div#body-add {
+	padding: 20px;
+}
+
+div#modal-add-foto form#form-add div#relative-img {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+div#modal-add-foto form#form-add div#relative-img img#img-logo {
+	width: 280px;
+	height: 280px;
+	border-radius: 5px;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+div#modal-add-foto form#form-add div#col-inp {
+	display: flex;
+	flex-direction: column;
+}
+
+div#modal-add-foto form#form-add textarea {
+	resize: none;
+}
+
+div#modal-add-foto form#form-add select {
+	border: 1px solid #ced4da;
+}
+
+div#modal-add-foto form#form-add select#select_descricao option {
+	border: none;
+}
+
+div#modal-add-foto form#form-add div#col-inp label::after {
+	content: " *";
+	color: #ea7d7d;
+}
+
+div#modal-add-foto form#form-add div#col-inp span#span-campos::before {
+	content: "* ";
+	color: #ea7d7d;
+}
+
+div#modal-add-foto form#form-add div#col-inp div.erros {
+	position: absolute;
+	bottom: 0;
+}
+
+div#modal-add-foto form#form-add div#col-inp div.erros span.hidden-errors {
+	display: none;
+}
+
+div#modal-add-foto form#form-add label {
+	pointer-events: none;
+}
+
+div#modal-add-foto form#form-add button {
+	transition: .3s;
+}
+
+div#modal-add-foto form#form-add button#btn-add {
+	background-color: #ea7d7d;
+	border-color: #ea7d7d;
+}
+
+div#modal-add-foto form#form-add button#btn-exit {
+	background-color: transparent;
+	border-color: #ea7d7d;
+	color: #ea7d7d;
+}
+
+/* ------------ ON FOCUS ------------ */
+
+div#modal-add-foto form#form-add button#btn-add:hover {
+	background-color: #ce4646;
+	border-color: #ce4646;
+}
+
+div#modal-add-foto form#form-add button:hover {
+	transform: translateY(-2px);
+}
+
+
+/* ------------ ON FOCUS ------------ */
+
+div#modal-ver-desc div.modal-body input:focus,
+div#modal-ver-desc div.modal-body textarea:focus {
+	box-shadow: 0 0 0 0.2rem rgba(234, 125, 125, .4);
+	border: 1px solid rgba(234, 125, 125, .4);
+}
+
+div#modal-editar-desc div.modal-body input:focus,
+div#modal-editar-desc div.modal-body textarea:focus {
+	box-shadow: 0 0 0 0.2rem rgba(234, 125, 125, .4);
+	border: 1px solid rgba(234, 125, 125, .4);
+}
+
+div#modal-add-foto form#form-add select#select_descricao:focus,
+div#modal-add-foto form#form-add textarea:focus {
+	box-shadow: 0 0 0 0.2rem rgba(234, 125, 125, .4);
+	border: 1px solid rgba(234, 125, 125, .4);
+	outline: none;
+}
+
+div#modal-add-foto form#form-add button#btn-exit:focus {
+	box-shadow: 0 0 0 0.2rem rgba(234, 125, 125, .4);
+}

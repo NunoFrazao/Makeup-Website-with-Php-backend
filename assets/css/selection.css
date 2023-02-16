@@ -1,0 +1,5 @@
+/* ------------ TAGS NORMAIS ------------ */
+
+::selection {								/* SELECTION WITH MOUSE GETS THIS COLOR INSTEAD OF DEFAULT BLUE */
+    background: rgba(184, 184, 184, 0.6);
+}

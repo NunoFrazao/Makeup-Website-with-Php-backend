@@ -1,0 +1,152 @@
+body {
+    top: 0 !important;
+}
+
+main {
+    width: 100%;
+    height: calc(100vh - 10vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#massagensMain div.colunas {
+    padding: 0;
+    display: flex;
+}
+
+div#massagensMain div#corpoInteiro {
+    justify-content: flex-end;
+}
+
+
+div#massagensMain div#costas {
+    justify-content: flex-start;
+}
+
+div#massagensMain div.massagemContainer {
+    width: 350px;
+    margin: 0 15%;
+}
+
+div#massagensMain div.massagemContainer img.massagemImagem {
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+div#massagensMain div.massagemContainer section.massagemInformacao h2 {
+    color: #bb3838;
+    font-size: 2.5em;
+}
+
+div#massagensMain div.massagemContainer section.massagemInformacao p{
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.7em;
+}
+
+div#massagensMain div.massagemContainer a.massagemVerMais {
+    position: relative;
+    color: white;
+    background-color: #bb3838;
+    border: none;
+    font-size: 1.25em;
+    padding: 2% 10%;
+    float: right; 
+}
+
+div#massagensMain div.massagemContainer a.massagemVerMais:hover {
+    box-shadow: 0 0 0 0.2rem rgba(197, 36, 36, .25);
+}
+
+div#massagensMain div.massagemContainer a.massagemVerMais i {
+    margin-left: 5px;
+    font-size: 1rem;
+	transition: transform .3s;
+}
+
+div#massagensMain div.massagemContainer a.massagemVerMais:hover i {	
+	transform: translateX(10px);
+}
+
+/* --------- MEDIA RESPONSIVE ---------- */
+
+
+/* ------------- MEDIA MAX-WIDTH: 1200PX ------------- */
+
+@media (max-width: 1199.98px) {
+    div#massagensMain div.massagemContainer {
+        margin: 0 10%;
+    }
+}
+
+/* ------------- MEDIA MAX-WIDTH: 992PX ------------- */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    div#massagensMain div.massagemContainer {
+        width: 300px;
+    }
+    
+    div#massagensMain div.massagemContainer img.massagemImagem {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* ------------- MEDIA MAX-WIDTH: 768PX ------------- */
+
+@media (max-width: 767.98px) {   
+    main {
+        display: inherit;
+        height: calc(100vh - 7vh);
+    }
+
+    div#massagensMain div#corpoInteiro, div#massagensMain div#costas {
+        justify-content: center;
+    }
+
+    div#massagensMain div.massagemContainer {
+        width: 70vw;
+        text-align: center;
+    }
+    
+    div#massagensMain div.massagemContainer h2.tituloMobile {
+        font-size: 5vw;
+        text-align: left;
+        color: #bb3838;
+    }
+
+    div#massagensMain div.massagemContainer section.massagemInformacao h2 {
+        text-align: left;
+        font-size: 2em;
+    }
+
+    div#massagensMain div.massagemContainer section.massagemInformacao p {
+        margin-bottom: 1vh;
+        font-size: 1.8vh;
+    }
+
+    div#massagensMain div.massagemContainer img.massagemImagem {
+        width: 40vh;
+        height: 20vh;
+        margin: 1vh 0 2vh 0;
+    } 
+
+    div#massagensMain div.massagemContainer a.massagemVerMais {
+        font-size: 2vh;
+        padding: 2% 6%;
+    }
+}
+
+/* ------------- MEDIA MAX-WIDTH: 576PX ------------- */
+
+@media (max-width: 575.98px) {
+    div#massagensMain div.massagemContainer img.massagemImagem {
+        max-width: 50vw;
+        height: 22vh;
+        margin: 1vh 0 2vh 0;
+    }
+}

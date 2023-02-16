@@ -1,0 +1,78 @@
+div.colunaFormPerfil{
+border-right: 1px solid #dee2e6;
+}
+div#alterarPerfilContainer{
+  margin-left: 9%;
+}
+div.formInteiro{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.txtFormPass{
+  text-align: center;
+}
+.btnFormPass{
+  margin-left: 7%;
+}
+.btnFormPerfil{
+  margin-left: 79%;
+}
+
+div#alterarPerfilContainer input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="password"]:focus{
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #bb3838;
+}
+
+#btnAlterarPass{
+  background-color: #bb3838;
+  border-style: none;
+  border-radius: 20px;
+  box-shadow: none;
+  transition: transform .2s;
+}
+#btnAlterarPass:hover{
+  box-shadow: 0 0 0 0.2rem rgba(197, 36, 36, .25);
+}
+
+#btnAlterarDadosConta{
+  background-color: #bb3838;
+  border-style: none;
+  border-radius: 20px;
+  box-shadow: none;
+  transition: transform .2s;
+  /*width: 100%;*/
+}
+#btnAlterarDadosConta:hover{
+  box-shadow: 0 0 0 0.2rem rgba(197, 36, 36, .25);
+}
+
+@media (max-width: 770px){
+  div.colunaFormPerfil{
+    margin-right: 110px;
+    margin-left: 35px;
+    border-style: none;
+    margin-bottom: 50px;
+  }
+  label.labelAlterar{
+    font-weight: bold;
+  }
+  div.btnFormPerfil{
+    margin-left: 30%;
+  }
+
+  div.txtFormPass{
+    text-align: left;
+  }
+  div.colunaFormAlterarPass{
+    margin-right: 110px;
+    margin-left: 35px;
+    border-style: none;
+    margin-bottom: 50px;
+  }
+  div.btnFormPass{
+    margin-left: 27%;
+  }
+
+}

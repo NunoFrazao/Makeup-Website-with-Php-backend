@@ -1,0 +1,429 @@
+/* Largura do container */
+div#mainContainer {
+    width: 90vw;
+}
+
+div#mainContainer div#title div.col{
+    padding: 0;
+}
+
+div#mainContainer div#title a#voltarAtras {
+    font-size: 2.5em;
+    color: #ce4646;
+    line-height: 100%;
+    height: fit-content;
+    width: fit-content;
+}
+
+div#mainContainer div#title a#voltarAtras:hover {
+    color: #bb3838;
+}
+
+div#mainContainer div#title h1 {
+    font-size: 2rem;
+}
+
+div#marcacaoMain div.mainColumn {
+    width: 100%;
+}
+
+div#marcacaoMain form#marcacaoForm h2.subTitle {
+    font-size: 1.75rem;
+    font-variant: small-caps;
+}
+
+/*
+* INPUTS DE FUNCIONARIO TELEFONE E MENSGAGEM
+*/
+
+div#marcacaoMain div#inputInfo {
+    border-right: 1px solid #dee2e6;
+}
+
+div#marcacaoMain div#inputInfo label,
+div#marcacaoMain div#inputInfo select#funcionarioDropdown,
+div#marcacaoMain div#inputInfo input,
+div#marcacaoMain div#inputInfo textarea#mensagem {
+    font-size: 1.25rem;
+}
+
+div#marcacaoMain div#inputInfo select#funcionarioDropdown:focus,
+div#marcacaoMain div#inputInfo input:focus,
+div#marcacaoMain div#inputInfo textarea#mensagem:focus {
+    border-color: #bb3838;
+    box-shadow: 0 0 0 0.2rem rgba(234, 125, 125, .4);
+}
+
+div#marcacaoMain div#inputInfo div.form-group {
+    position: relative;
+}
+
+div#marcacaoMain div#inputInfo i.information {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    color: #bb3838;
+    font-size: 1.1rem;
+}
+
+div#marcacaoMain div#inputInfo textarea#mensagem {
+    resize: none;
+}
+
+div#marcacaoMain div#inputInfo span.requiredSymbol {
+    font-size: 1.25rem;
+}
+
+div#marcacaoMain div#inputInfo div#duvidas {
+    position: absolute;
+    bottom: 0;
+}
+
+div#marcacaoMain form#marcacaoForm small.errorMsg {
+    display: none;
+}
+
+div#marcacaoMain form#marcacaoForm p#mensagemCamposObrigatorios,
+div#marcacaoMain form#marcacaoForm div#errorsLog,
+div#marcacaoMain form#marcacaoForm div#duvidas {
+    font-size: 18px;
+}
+
+
+
+/*
+* lISTA DE SERVICOS
+*/
+
+div#marcacaoMain div#listaServicos {
+    border-right: 1px solid #dee2e6;
+    border-left: 1px solid #dee2e6;
+}
+
+div#marcacaoMain div#listaServicos h3.servicoTitle {
+    font-size: 1.25rem;
+    color: #bb3838;
+}
+
+div#marcacaoMain div#listaServicos div#listaServicos-lista {
+    height: 62vh;
+    overflow-y: auto;
+}
+
+/* SCROLLBAR */
+
+/* width */
+div#marcacaoMain div#listaServicos ::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+div#marcacaoMain div#listaServicos ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+div#marcacaoMain div#listaServicos ::-webkit-scrollbar-thumb {
+  background: #ea7d7d;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+div#marcacaoMain div#listaServicos ::-webkit-scrollbar-thumb:hover {
+  background: #bb3838;
+}
+
+/*
+* FORMATAR AS CHECKBOXES DO DROPDOWN DOS SERVICOS
+*/
+
+/* Container */
+div#marcacaoMain div#listaServicos label.label-container {
+    display: block;
+    position: relative;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    font-size: 1.25rem;
+}
+
+/* Container on hover */
+div#marcacaoMain div#listaServicos label.label-container:hover {
+    background-color: #fdf4f3;
+}
+
+/* Esconder os inputs default do browser */
+div#marcacaoMain div#listaServicos label.label-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Criar custom checkbox */
+div#marcacaoMain div#listaServicos label.label-container span.checkmark {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+/* On mouse over */
+div#marcacaoMain div#listaServicos label.label-container:hover input ~ span.checkmark {
+    background-color: #ccc;
+}
+
+/* Quando uma checkbox é checked, mudar cor background */
+div#marcacaoMain div#listaServicos label.label-container input:checked ~ span.checkmark {
+    background-color: #b86b77;
+}
+
+/* Criar a checkmark/indicador */
+div#marcacaoMain div#listaServicos label.label-container span.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Aparecer checkmark quando checked */
+div#marcacaoMain div#listaServicos label.label-container input:checked ~ span.checkmark::after {
+    display: block;
+}
+
+/* Formatar ckeckmark */
+div#marcacaoMain div#listaServicos label.label-container span.checkmark::after {
+    left: 8px;
+    top: 3px;
+    width: 10px;
+    height: 15px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+
+/*
+* RESUMO
+*/
+
+div#marcacaoMain div#resumo * {
+    display: block;
+}
+
+div#marcacaoMain div#resumo {
+    position: relative;
+    border-left: 1px solid #dee2e6;
+}
+
+div#marcacaoMain div#resumo div#resumoMain ul#listaResumo {
+    font-size: 1.25rem;
+}
+
+div#marcacaoMain div#resumo div#resumoMain ul#listaResumo li {
+    display: none;
+    padding: 7px 0 7px 10px;
+}
+
+div#marcacaoMain div#resumo div#resumoMain p#precoTotal {
+    display: block;
+    position: absolute;
+    font-size: 1.5rem;
+    top: 480px;
+    border-top: 2px solid #dee2e6;
+    width: 100%;
+    padding-top: 10px;
+}
+
+div#marcacaoMain div#resumo div#resumoMain p#precoTotal span#total {
+    display: inline-block;
+    font-size: 1.25rem;
+    color: #bb3838;
+}
+
+div#marcacaoMain div#resumo input#marcarBtn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #bb3838;
+    color: white;
+    font-size: 1.25rem;
+    padding: 6px 80px;
+    width: 60%;
+}
+
+div#marcacaoMain div#resumo input#marcarBtn:hover {
+    background-color: #aa3434;
+}
+
+div#marcacaoMain div#resumo input#marcarBtn:focus {
+    box-shadow: none;
+    border: none;
+}
+
+
+/*
+* ---------------------------------------------------------------------------- MEDIA RESPONSIVE ---------------------------------------------------------------------------------------
+*/
+
+/* ------------- MEDIA MAX-WIDTH: 1500PX ------------- */
+
+@media (max-width: 1500px) {
+    div#mainContainer {
+        width: 100vw;
+    }
+
+    div#marcacaoMain div#inputInfo label,
+    div#marcacaoMain div#inputInfo select#funcionarioDropdown,
+    div#marcacaoMain div#inputInfo input,
+    div#marcacaoMain div#inputInfo textarea#mensagem {
+        font-size: 1.1rem;
+    }
+
+    div#marcacaoMain div#listaServicos label.label-container {
+        font-size: 1.1rem;
+        padding-left: 5px;
+    }
+
+    div#marcacaoMain div#resumo div#resumoMain ul#listaResumo {
+        font-size: 1.1rem;
+    }
+
+    div#marcacaoMain div#resumo div#resumoMain ul#listaResumo li {
+        padding-left: 5px;
+    }
+}
+
+/* ----------- MEDIA MAX-WIDTH: 1200PX ----------- */
+
+@media (max-width: 1199.98px) {
+    div#mainContainer div#title h1 {
+        font-size: 1.8rem;
+    }
+
+    div#marcacaoMain form#marcacaoForm h2.subTitle {
+        font-size: 1.6rem;
+    }
+
+    div#marcacaoMain div#inputInfo {
+        border: none;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    /*
+    * INPUTS DE FUNCIONARIO TELEFONE E MENSAGGEM
+    */
+    
+    div#marcacaoMain div#inputInfo div#duvidas {
+        position: relative;
+    }
+
+    /*
+    * lISTA DE SERVICOS
+    */
+
+    div#marcacaoMain div#listaServicos {
+        border: none;
+        border-top: 1px solid #dee2e6;
+        border-bottom: 1px solid #dee2e6;
+    }  
+
+    div#marcacaoMain div#listaServicos div#listaServicos-lista {
+        height: 100%;
+    }
+
+    div#marcacaoMain div#listaServicos label.label-container {
+        padding-left: 10px;
+    }
+
+    /*
+    * RESUMO
+    */
+
+    div#marcacaoMain div#resumo {
+        border: none;
+        border-top: 1px solid #dee2e6;
+    }
+
+    div#marcacaoMain div#resumo div#resumoMain ul#listaResumo li {
+        padding-left: 10px;
+    }
+
+    div#marcacaoMain div#resumo div#resumoMain p#precoTotal {
+        position: relative;
+        top: 0px;
+        border: none;
+    }
+
+    div#marcacaoMain div#resumo input#marcarBtn {
+        position: relative;
+        width: 50%;
+    }
+}
+
+/* ------------- MEDIA MIN-WIDTH: 768PX AND MAX WIDTH: 1200PX ------------- */
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    div#marcacaoMain div#resumo input#marcarBtn {
+        width: 35%;
+    }
+}
+
+/* ------------- MEDIA MAX-WIDTH: 576PX ------------- */
+
+@media (max-width: 575.98px) {
+    div#marcacaoMain div#inputInfo label,
+    div#marcacaoMain div#inputInfo select#funcionarioDropdown,
+    div#marcacaoMain div#inputInfo input,
+    div#marcacaoMain div#inputInfo textarea#mensagem {
+        font-size: 1rem;
+    }
+
+    div#marcacaoMain div#listaServicos h3.servicoTitle {
+        font-size: 1.2rem;
+    }
+
+    div#marcacaoMain div#listaServicos label.label-container {
+        font-size: 1rem;
+    }
+
+    div#marcacaoMain form#marcacaoForm p#mensagemCamposObrigatorios,
+    div#marcacaoMain form#marcacaoForm div#errorsLog,
+    div#marcacaoMain form#marcacaoForm div#duvidas {
+        font-size: 1rem;
+    }
+
+    /*
+    * RESUMO
+    */
+
+    div#marcacaoMain div#resumo div#resumoMain ul#listaResumo {
+        font-size: 1.1rem;
+    }
+
+    div#marcacaoMain div#resumo div#resumoMain p#precoTotal {
+        font-size: 1.25rem;
+    }
+    
+    div#marcacaoMain div#resumo div#resumoMain p#precoTotal span#total {
+        font-size: 1.1rem;
+    }
+
+    div#marcacaoMain div#resumo input#marcarBtn {
+        font-size: 1.1rem;
+        width: 70%;
+    }
+}

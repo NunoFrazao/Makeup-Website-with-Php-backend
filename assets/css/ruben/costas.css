@@ -1,0 +1,221 @@
+/* Imagem */
+
+div#costasMain div#mainContent div#costasImagem img {
+    height: 25vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Título */
+
+div#costasMain div#mainContent div.titulo h1 {
+    color: #bb3838;
+}
+
+/* Formatar ambos os textos */
+
+div#costasMain div#mainContent div.costasInformacao {
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+/* Texto esquerda (desktop) / Texto cima (mobile) */
+
+div#costasMain div#mainContent div#textoEsquerda {
+    padding-right: 4vw;
+    border-right: 1px solid gray;
+}
+
+/* Texto direita (desktop) / Texto baixo (mobile) */
+
+div#costasMain div#mainContent div#textoDireita {
+    padding-left: 4vw;
+    border-left: 1px solid lightgray;
+}
+
+/* Preço */
+
+div#costasMain div#mainContent div.preco p#precoValor{
+    float: right;
+    font-size: 2em;
+    color: #bb3838;
+}
+
+/* Row com o botão marcação */
+
+div#costasMain div#mainContent div#marcacao {
+    text-align: center;
+}
+
+/* Botão marcação */
+
+div#costasMain div#mainContent a#marcacaoBtn {
+    color: white;
+    text-decoration: none;
+    background-color: #bb3838;
+    padding: .5% 6%;
+    font-size: 1.25em;
+    border: none;
+}
+
+div#costasMain div#mainContent a#marcacaoBtn:hover {
+    box-shadow: 0 0 0 0.2rem rgba(197, 36, 36, .25);
+}
+
+div#costasMain div#mainContent a#marcacaoBtn i {
+    margin-left: 10px;
+    font-size: 1rem;
+	transition: transform .3s;
+}
+
+/* Botão marcação on hover */
+
+div#costasMain div#mainContent a#marcacaoBtn:hover i {	
+	transform: translateX(10px);
+}
+
+/* Colunas com butões de navegação */
+
+div#costasMain div#buttonsContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+/* Formatar botões de navegação */
+
+div#costasMain div#buttonsContainer a.button {
+    font-size: 2.5em;
+    color: #ce4646;
+    line-height: 100%;
+    height: fit-content;
+    width: fit-content;
+}
+
+
+/* Botões de navegação on hover */
+
+div#costasMain div#buttonsContainer a.button:hover {
+    text-decoration: none;
+    color: #bb3838;
+}
+
+div#costasMain div#buttonsContainer a#corpoInteiroBtn {
+    margin-top: 150px;
+}
+
+/* --------- MEDIA RESPONSIVE ---------- */
+
+/* ------------- MEDIA MAX-WIDTH: 1550PX ------------- */
+
+@media (min-width: 1550px) {
+    div#costasMain div#mainContent {
+       max-width: 66.66666%;
+    }
+
+    div#costasMain div.buttonContainer {
+        min-width: 16.6666%;
+    }
+}
+
+/* ------------- MEDIA MIN-WIDTH: 992PX ------------- */
+
+@media (min-width: 992px) {
+    div#costasMain div#buttonsContainer a#backBtn {
+        position: absolute;
+        top: 0;
+    } 
+}
+
+/* ------------- MEDIA MIN-WIDTH: 992PX AND MAX-WIDTH: 1200PX ------------- */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    div#costasMain div#mainContent div#costasImagem img {
+        height: 23vh;
+    }
+
+    div#costasMain div#mainContent div.titulo h1 {
+        font-size: 2.2em;
+    }
+
+    div#costasMain div#mainContent div.costasInformacao {
+        font-size: 1.1em;
+        line-height: 1.8em;
+    }    
+}
+
+/* ------------- MEDIA MAX-WIDTH: 991.98PX ------------- */
+/* -------------------- TABLETS --------------------- */
+
+@media (max-width: 991.98px) {
+    div#costasMain div#mainContent div#costasImagem img {
+        height: 17vh;
+        border-radius: 0;
+    }
+
+    div#costasMain div#mainContent div.titulo {
+        margin: 0;
+        padding: 0;
+    }
+
+    div#costasMain div#mainContent div.titulo h1 {
+        margin-left: 7vw;
+    }
+
+    div#costasMain div#mainContent div.costasInformacao {
+        line-height: 1.6em;
+    } 
+
+    div#costasMain div#mainContent div#textoEsquerda, div#costasMain div#mainContent div#textoDireita {
+        padding: 0;
+        margin: 0 7vw;
+        border: none;
+    }
+
+    div#costasMain div#mainContent div#textoEsquerda {
+        border-bottom: 1px solid gray;
+    }
+
+    div#costasMain div#mainContent div#textoDireita {
+        border-top: 1px solid gray;
+    }
+ 
+    div#costasMain div#mainContent div.preco {
+        padding: 0;
+        margin-right: 7vw;
+    }
+
+    div#costasMain div#mainContent a#marcacaoBtn {
+        padding: 1% 10%;
+    }
+
+    div#costasMain div#buttonsContainer {
+        width: fit-content;
+        padding: 0;
+        margin-left: 7vw;
+    }
+}
+
+/* ------------- MEDIA MAX-WIDTH: 576PX ------------- */
+/* ------------------ SMARTPHONES ------------------- */
+
+@media (max-width: 575.98px) {
+    div#costasMain div#mainContent div.titulo h1 {
+        font-size: 4vh;
+    }
+
+    div#costasMain div#mainContent div.costasInformacao {
+        font-size: 2vh;
+        line-height: 1.6em;
+    }
+
+    div#costasMain div#mainContent a#marcacaoBtn {
+        font-size: 2.5vh;
+    }
+
+    div#costasMain div#buttonsContainer a {
+        font-size: 2.25rem;
+    }
+}

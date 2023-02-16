@@ -1,0 +1,37 @@
+.goog-te-banner-frame.skiptranslate {
+	display: none !important;
+}
+
+.goog-te-gadget-icon {
+	display: none;
+}
+
+div.goog-te-gadget-simple {
+	margin-top: 20px;
+	border-radius: 4px;
+	background-color: transparent;
+	border: none;
+}
+
+a.goog-te-menu-value {
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+a.goog-te-menu-value span {
+	color: #802020;
+}
+
+a.goog-te-menu-value span:not(:first-child) {
+	display: none;
+}
+
+div#google_translate_element {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 5vh;
+	left: 0%;
+	overflow-x: hidden;
+	transition: .5s;
+}

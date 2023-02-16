@@ -1,0 +1,50 @@
+div#div-dashboard {
+	background-color: white;
+	border-radius: 10px;
+}
+
+div#div-dashboard h1 {
+	color: #ea7d7d;
+} 
+
+div#div-dashboard h5 {
+	font-size: 1.1rem;
+}
+
+div#div-dashboard div.mainInfo {
+	font-size: 2.6rem;
+	color: #ea7d7d;
+}
+
+div#div-dashboard table {
+	font-size: 1.1rem;
+}
+
+div#div-dashboard table thead th {
+	color: #ea7d7d;
+}
+
+div#div-dashboard table tbody img.fotoPerfil {
+	object-fit: cover;
+}
+
+div#div-dashboard div#to-do-list {
+	font-size: 1.5rem;
+}
+
+div#div-dashboard label.task {
+	color: #ea7d7d;
+}
+
+div#div-dashboard input[type="checkbox"] {
+	transform: scale(2) translateY(5px);
+}
+
+div#div-dashboard div#to-do-list label, div#div-dashboard div#to-do-list small {
+	margin-left: 20px;
+}
+
+div#div-dashboard div#to-do-list small {
+	display: block;
+	font-size: 1.1rem;
+}

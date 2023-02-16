@@ -1,0 +1,46 @@
+button.btnPerguntas{
+  margin-top: 1%;
+  margin-bottom: 1%;
+  color: black;
+  padding-bottom: 0;
+  text-decoration: none;
+}
+button.btnPerguntas:active, button.btnPerguntas:hover, button.btnPerguntas:visited {
+  color: #bb3838;
+  text-decoration: none;
+}
+div.card{
+  margin-left: 50%;
+  width: 500px;
+  margin: auto;
+  border-style: none;
+  border-top: 1px solid #bb3838;
+  border-bottom: 1px solid #bb3838;
+  border-radius: 0px;
+}
+div#card2, #card3{
+  border-top: none;
+}
+div.container h1{
+  text-align: center;
+}
+i#iconCollapse1, #iconCollapse2, #iconCollapse3{
+  padding-right: 2.5%;
+  float: right;
+  padding-top: 2.5%;
+}
+
+
+
+/* RESPOSIVE */
+
+@media (max-width: 770px){
+  div.colunaFAQ{
+  margin-top: 5%;
+  margin-bottom: 10%;
+  }
+  div.card{
+    width: 100%;
+  }
+
+}

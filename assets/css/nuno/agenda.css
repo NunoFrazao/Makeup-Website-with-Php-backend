@@ -1,0 +1,112 @@
+/* ------------ TAGS NORMAIS ------------ */
+
+/* ------------------------ DIV AGENDA ------------------------ */
+
+div#div-agenda {
+	padding: 20px;
+	background-color: white;
+	border-radius: 5px;
+	background-color: white;
+}
+
+div#calendar button.fc-button-primary {
+	border: none;
+	background-color: #ea7d7d;
+	color: white;
+}
+
+div#calendar button.fc-button-primary:not(:disabled):active,
+div#calendar button.fc-button-primary:not(:disabled).fc-button-active {
+	border: none;
+	background-color: #ce4646;
+	color: white;
+	box-shadow: none;
+}
+
+div#div-agenda div#div-form {
+	position: relative;
+	margin-top: 50px;
+}
+
+div#div-agenda h1#title-agenda {
+	color: #1d1d1d;
+}
+
+div#div-agenda div#div-form label {
+	color: #1d1d1d;
+}
+
+div#div-agenda div#div-form label:not(:first-child) {
+	margin-top: 20px;
+}
+
+div#div-agenda div#div-form textarea {
+	resize: none;
+}
+
+div#div-agenda div#div-form label::after {
+	content: " *";
+	color: #ea7d7d;
+}
+
+div#div-agenda div#div-form span#span-info::before {
+	content: "* ";
+	color: #ea7d7d
+}
+
+div#div-agenda div#div-form button {
+	transition: all .3s;
+}
+
+div#div-agenda div#div-form button#btn-criar {
+	background-color: #ea7d7d;
+	color: white;
+	margin-right: 10px;
+}
+
+div#div-agenda div#div-form button#btn-limpar {
+	border-color: #ea7d7d;
+	color: #ea7d7d;
+	margin-left: 10px;
+}
+
+
+/* ------------ ON HOVER ------------ */
+
+div#calendar button.fc-button-primary:not(:disabled):hover {
+	border: none;
+	background-color: #dc6060;
+	color: white;
+}
+
+div#div-agenda div#div-form button:hover {
+	transform: translateY(-2px);
+}
+
+div#div-agenda div#div-form button#btn-criar:hover {
+	background-color: #ce4646;
+}
+
+
+/* ------------ ON FOCUS ------------ */
+
+div#div-agenda div#div-form textarea:focus, div#div-agenda div#div-form input:focus {
+	box-shadow: 0 0 0 0.2rem rgba(234, 125, 125, .4);
+	border: 1px solid rgba(234, 125, 125, .4);
+}
+
+div#div-agenda div#div-form button:focus {
+	box-shadow: 0 0 0 0.2rem rgba(234, 125, 125, .4);
+	border: 1px solid rgba(234, 125, 125, .4);
+}
+
+div#modalClickDay div#body-content input:focus,
+div#modalClickDay div#body-content textarea:focus,
+div#modalClickDay div.modal-footer button:focus {
+	box-shadow: 0 0 0 0.2rem rgba(234, 125, 125, .4);
+	border: 1px solid rgba(234, 125, 125, .4);
+}
+
+div#list-marc button#btn-lista:focus {
+	box-shadow: none;
+}

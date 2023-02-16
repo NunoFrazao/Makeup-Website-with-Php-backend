@@ -1,0 +1,26 @@
+#usersList {
+    background-color: white !important;
+    border-radius: 10px;
+}
+#usersList h1{
+   color: #ea7d7d;
+}
+#usersList table#listUsers thead th{
+    color:  #ea7d7d;
+}
+div#editUser{
+    background-color: white;
+    border-radius: 10px;
+}
+table#listUsers img.fotoPerfil {
+    object-fit: cover;
+}
+
+#editUser .erro{
+    display: block;
+    color: red;
+}
+
+body#users .modal-backdrop{
+    position: unset;
+}

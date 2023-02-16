@@ -1,0 +1,86 @@
+/* ------------ TAGS NORMAIS ------------ */
+
+div#div-descr-unhas {
+	padding: 20px;
+	background-color: white;
+	border-radius: 5px;
+}
+
+div#div-descr-unhas h1#edit-title {
+	padding: 10px;
+	color: #1d1d1d;
+}
+
+div#div-descr-unhas div#row-texts {
+	background-color: white;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+table#table-unhas-page tbody td.descricoesUnhas {
+	max-width: 900px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+table#table-unhas-page tbody tr button i {
+	font-size: 1.5rem;
+	color: #ea7d7d;
+}
+
+table#table-unhas-page thead {
+	color: #1d1d1d;
+}
+
+table#table-unhas-page thead th:not(:last-child) {
+	cursor: pointer;
+}
+
+table#table-unhas-page thead th:last-child {
+	pointer-events: none;
+}
+
+table#table-unhas-page thead th {
+	position: relative;
+}
+
+
+table#table-unhas-page thead th i.sort-icon {
+	padding-left: 10px;
+	cursor: pointer;
+	color: #8a8a8a;
+}
+
+table#table-unhas-page thead tr a#sortDesc {
+	display: none;
+}
+
+div#row-texts span#no-results {
+	display: none;
+	font-weight: bold;
+	color: #1d1d1d;
+}
+
+div#row-texts span.showSpan {
+	display: block !important;
+}
+
+
+/* ------------ ON HOVER ------------ */
+
+table#table-unhas-page tbody tr:hover {
+	background-color: #efdede;
+}
+
+
+/* ------------ ON FOCUS ------------ */
+
+table#table-unhas-page tbody tr button#buttonEdit:focus {
+	box-shadow: 0 0 0 0.2rem rgba(245, 100, 100, 0.33);
+}
+
+div#div-descr-unhas div#row-texts input#search-bar:focus {
+	box-shadow: 0 0 0 0.2rem rgba(234, 125, 125, .4);
+	border: 1px solid rgba(234, 125, 125, .4);
+}

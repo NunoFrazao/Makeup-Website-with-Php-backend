@@ -1,0 +1,143 @@
+div#infoProdutoMain {
+    width: 90vw;
+}
+
+div#infoProdutoMain div#voltar a#voltarAtras {
+    font-size: 2.5em;
+    color: #ce4646;
+    display: inline-block;
+}
+
+div#infoProdutoMain div#voltar a#voltarAtras:hover {
+    text-decoration: none;
+    color: #bb3838;
+}
+
+div#infoProdutoMain div#fotosProduto {
+    height: 75vh;
+}
+
+div#infoProdutoMain div#fotosProduto img.imagemProduto {
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+div#infoProdutoMain div#infoProduto h3#marcaProduto {
+    font-size: 1.7rem;
+}
+
+div#infoProdutoMain div#infoProduto h2#nomeProduto {
+    font-size: 2.5rem;
+    color: #bb3838;
+}
+
+div#infoProdutoMain div#infoProduto p#artigoIndisponivel {
+    font-size: 1.5rem;
+}
+
+div#infoProdutoMain div#infoProduto p#preco {
+    font-size: 3rem;
+}
+
+/* Cores */
+div#infoProdutoMain div#infoProduto div#coresProduto {
+    font-size: 1.5rem;
+}
+
+div#infoProdutoMain div#infoProduto p#descricaoProduto {
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
+/*
+*------------------------- MEDIA MIN WIDTH: 992PX AND MAX WIDTH: 1200PX -----------------------------
+*/
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    div#infoProdutoMain div#fotosProduto {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+/*
+*----------------------------- MEDIA MAX WIDTH: 992PX -----------------------------
+*/
+
+@media (max-width: 991.98px) {
+    div#infoProdutoMain {
+        width: 100vw;
+    }
+
+    div#infoProdutoMain div#fotosProduto {
+        height: 40vw;
+        width: 40vw;
+    }
+
+    div#infoProdutoMain div#infoProduto h3#marcaProduto {
+        font-size: 1.25rem;
+    }
+    
+    div#infoProdutoMain div#infoProduto h2#nomeProduto {
+        font-size: 1.8rem;
+    }
+    
+    div#infoProdutoMain div#infoProduto p#artigoIndisponivel {
+        font-size: 1.25rem;
+    }
+    
+    div#infoProdutoMain div#infoProduto p#preco {
+        font-size: 2.1rem;
+        color: #bb3838;
+    }
+    
+    /* Cores */
+    div#infoProdutoMain div#infoProduto div#coresProduto {
+        font-size: 1.4rem;
+    }
+    
+    div#infoProdutoMain div#infoProduto p#descricaoProduto {
+        font-size: 1.25rem;
+    }
+}
+
+/*
+*----------------------------- MEDIA MAX WIDTH: 576PX -----------------------------
+*/
+
+@media (max-width: 575.98px) {
+    div#infoProdutoMain div#voltar a#voltarAtras {
+        font-size: 2.25em;
+    }
+
+    div#infoProdutoMain div#fotosProduto {
+        height: 55vw;
+        width: 65vw;
+    }
+
+    div#infoProdutoMain div#infoProduto h3#marcaProduto {
+        font-size: 1.1rem;
+    }
+    
+    div#infoProdutoMain div#infoProduto h2#nomeProduto {
+        font-size: 1.6rem;
+    }
+    
+    div#infoProdutoMain div#infoProduto p#artigoIndisponivel {
+        font-size: 1.2rem;
+    }
+    
+    div#infoProdutoMain div#infoProduto p#preco {
+        font-size: 2rem;
+        color: #bb3838;
+    }
+    
+    /* Cores */
+    div#infoProdutoMain div#infoProduto div#coresProduto {
+        font-size: 1.2rem;
+    }
+    
+    div#infoProdutoMain div#infoProduto p#descricaoProduto {
+        font-size: 1.1rem;
+    }
+}

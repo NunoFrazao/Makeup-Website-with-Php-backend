@@ -1,0 +1,22 @@
+div#div-dashboard div .fc-button {
+    font-size: 1rem;
+    border: none;
+    background-color: #ea7d7d;
+    color: white;
+}
+
+div#div-dashboard div .fc-button:hover {
+    background-color: #dc6060;
+}
+
+div#div-dashboard div .fc-button:focus, div#div-dashboard div .fc-button:active {
+    background-color: #ce4646;
+}
+
+div#div-dashboard div .fc-center h2 {
+    font-size: 1.75rem;
+}
+
+div#div-dashboard div .fc-toolbar {
+    margin-bottom: 1.25rem;
+}

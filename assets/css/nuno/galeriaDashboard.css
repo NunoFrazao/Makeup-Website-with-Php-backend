@@ -1,0 +1,217 @@
+/* ------------ TAGS NORMAIS ------------ */
+
+div#galeriaCont {
+	padding: 20px;
+	background-color: white;
+	border-radius: 5px;
+}
+
+div#galeriaCont div#relative {
+	position: relative;
+}
+
+div#galeriaCont div#relative h1#title {
+	color: #ea7d7d;
+}
+
+div#galeriaCont div#relative h1#title span#span-users {
+	font-size: 1.2rem;
+	color: rgba(0, 0, 0, .3);
+}
+
+div#galeriaCont div#relative a#anc {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	padding: 5px 12px;
+	border: 2px solid #ea7d7d;
+	border-radius: 5px;
+	transform: translateY(-50%);
+	background-color: #ea7d7d;
+	text-decoration: none;
+	color: #fff;
+	transition: border .3s;
+}
+
+div#galeriaCont div#relative a#anc i {
+	padding: 0px 10px;
+	color: #fff;
+}
+
+div#galeriaCont div.search-div {
+	position: relative;
+	margin: 2rem 0;
+	margin-left: 20px;
+}
+
+div#galeriaCont div.search-div i {
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	transform: translateY(-50%);
+	color: black;
+}
+
+div#galeriaCont div.search-div input.search-bar {
+	position: relative;
+	width: 100%;
+	padding: 12px 20px 12px 60px;
+	border: none;
+	border-bottom: 1px solid transparent;
+	font-size: 16px;
+	background-position: 10px 12px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	color: #1d1d1d;
+}
+
+div#galeriaCont p.no-results {
+	display: none;
+	color: rgba(0, 0, 0, .7);
+}
+
+div#galeriaCont ul#tabs {
+	width: 100%;
+	font-size: 1.5rem;
+}
+
+div#galeriaCont div#content-tab {
+	width: 100%;
+	border: 1px solid #dee2e6;
+	border-top: none;
+}
+
+div#galeriaCont ul#tabs li {
+	width: 33.33333%;
+}
+
+div#galeriaCont ul#tabs li a {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	color: #ea7d7d;
+}
+
+div#galeriaCont ul#tabs li a.active {
+	position: relative;
+	color: #bb3838;
+	font-weight: bold;
+}
+
+div#galeriaCont ul#tabs li a.active::after {
+	content: "";
+	position: absolute;
+	display: block;
+	background-color: #ea7d7d;
+	width: 10%;
+	height: 2px;
+	margin: auto;
+	left: 0;
+	right: 0;
+}
+
+/* --------------------------- TABLE UNHAS --------------------------- */
+
+div#galeriaCont table.table-galeria {
+	margin-top: 30px;
+}
+
+div#galeriaCont table.table-galeria caption {
+	display: none;
+}
+
+div#galeriaCont table.table-galeria tbody tr:nth-child(odd) {
+	background-color: #fff;
+}
+
+div#galeriaCont table.table-galeria thead th {
+	position: relative;
+	border-top: none;
+	pointer-events: none;
+	color: #ea7d7d;
+}
+
+div#galeriaCont table.table-galeria thead th i {
+	position: absolute;
+	top: 50%;
+	padding-left: 10px;
+	transform: translateY(-50%);
+	font-size: 0.8rem;
+	color: rgba(0, 0, 0, .4);
+}
+
+div#galeriaCont table.table-galeria tbody tr {
+	color: rgba(0, 0, 0, .8);
+}
+
+div#galeriaCont table.table-galeria tbody tr td {
+	position: relative;
+	vertical-align: inherit;
+}
+
+div#galeriaCont table.table-galeria tbody tr td.descr-foto {
+	max-width: 200px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+div#galeriaCont table.table-galeria tbody tr td img {
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+div#galeriaCont table.table-galeria tbody tr td i {
+	font-size: 1.3rem;
+	color: #ea7d7d;
+}
+
+button#btn-logout {
+	background-color: #cacaca;
+	border: none;
+	color: white;
+	transition: background .3s;
+}
+
+span#spanTitle {
+	color: #17a2b8;
+}
+
+
+/* ------------ ON HOVER ------------ */
+
+div#galeriaCont div#relative a#anc:hover {
+	box-shadow: 0 0 0 0.2rem rgba(234, 125, 125, .4);
+}
+
+button#btn-logout:hover {
+	background-color: #bfbfbf;
+	box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, .1);
+}
+
+div#galeriaCont ul#tabs li a:hover {
+	color: #bb3838;
+}
+
+div#galeriaCont table.table-galeria tbody tr:hover {
+	background-color: #efdede;
+}
+
+
+/* ------------ ON FOCUS ------------ */
+
+div#galeriaCont input.search-bar:focus {
+	box-shadow: none;
+	outline: none;
+}
+
+div#galeriaCont table.table-galeria tbody a:focus {
+	background-color: rgba(234, 152, 57, .1);
+	box-shadow: none;
+}
+
+button#btn-logout:focus {
+	background-color: #bfbfbf;
+	box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, .1);
+}

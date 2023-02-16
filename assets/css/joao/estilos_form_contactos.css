@@ -1,0 +1,111 @@
+div.colunaFAQ{
+margin-top: 5%;
+}
+
+div.colunaForm{
+border-right: 1px solid #dee2e6;
+margin-left: 5%;
+margin-top: 5%;
+}
+
+div#contactosContainer #txtTitContacto{
+  text-align: center;
+}
+
+i.fa-arrow-left{
+  color:#bb3838;
+  font-size: 30px;
+  margin-left: 10%;
+}
+
+i.fa-arrow-left:hover{
+  transform: scale(1.3);
+}
+
+div#contactosContainer input{
+  margin-left: 65%;
+  width: 250px;
+  position: relative;
+}
+
+div#contactosContainer input[type="text"]:focus, div#contactosContainer input[type="email"]:focus{
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #bb3838;
+}
+
+div#contactosContainer #txtAreaMensagem{
+  margin-left: 65%;
+  width: 250px;
+  outline-color: invert;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+div#contactosContainer #txtAreaMensagem:focus{
+  -webkit-box-shadow: none;
+  border: 1px solid #bb3838;
+}
+
+div#contactosContainer #lblTxtArea{
+  margin-left: 65%;
+}
+
+div#contactosContainer #btnEnviar{
+  background-color: #bb3838;
+  border-style: none;
+  padding-left: 30%;
+  padding-right: 30%;
+  margin-left: 105%;
+  border-radius: 20px;
+  box-shadow: none;
+  transition: transform .2s;
+}
+
+div#contactosContainer #btnEnviar:hover{
+  box-shadow: 0 0 0 0.2rem rgba(197, 36, 36, .25);
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 770px){
+
+  div#contactosContainer input, div#contactosContainer label{
+    margin-left: 18%;
+  }
+  div#contactosContainer input[type="text"], div#contactosContainer input[type="email"]{
+    width: 60%;
+  }
+  div#contactosContainer #lblTxtArea{
+    margin-left: 19%;
+  }
+  div#contactosContainer #txtAreaMensagem{
+    margin-left: 17%;
+    outline-color: invert;
+    border: 1px solid #c8c8c8;
+    width: 63%;
+  }
+
+  div#contactosContainer #btnEnviar{
+    background-color: #bb3838;
+    border-style: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 19%;
+    border-radius: 20px;
+    box-shadow: none;
+    margin-left: 35%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  div.colunaForm{
+  border-right: none;
+  border-bottom: 1px solid #dee2e6;
+  margin-left: 5%;
+  margin-top: 5%;
+  }
+  div.colunaFAQ{
+  margin-top: 5%;
+  margin-bottom: 10%;
+  }
+
+}

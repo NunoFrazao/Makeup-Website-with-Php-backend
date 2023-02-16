@@ -1,0 +1,33 @@
+div#areaTabelaMaquilhagem {
+  background-color: white;
+  border-radius: 5px;
+}
+div#areaTabelaMaquilhagem h1, th{
+  padding-top: 10px;
+  color: #ea7d7d;
+}
+
+table#tabelaMaquilhagem{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+table#tabelaMaquilhagem i, div.botoesTabMaquilhagem {
+  margin-left: 10%;
+  display: inline-block;
+  color: #ea7d7d;
+  cursor: pointer;
+}
+
+i.opcoes:hover{
+  font-weight: bold;
+}
+
+/* ESTILOS MODAL */
+div#tituloModal{
+  color: #ea7d7d;
+}
+textarea#editarDescricaoMaquilhagem:focus{
+  -webkit-box-shadow: none;
+  border: 1px solid #ea7d7d;
+}

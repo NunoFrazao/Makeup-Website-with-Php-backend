@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="linearGradient-2" x1="960" x2="960" y1="-64.8" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="rgb(255,255,255)"/>
+      <stop offset="1" stop-color="rgb(238,116,110)"/>
+      <stop offset="1" stop-color="rgb(255,95,88)"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#linearGradient-2)" fill-rule="evenodd" d="M1920 1080S922 950.5 513.5 665.5 0 0 0 0v1080h1920z"/>
+</svg>

@@ -1,0 +1,43 @@
+/*
+* MODAL ADICIONAR PRODUTO
+*/
+
+div#addProduct, div#addProduct select#categoriaProduto {
+    font-size: 1.25rem;
+}
+
+div#addProduct label#insertPhotosInputLabel {
+    left: 15px;
+    right: 15px;
+}
+
+div#addProduct textarea#descricaoProduto {
+    resize: none;
+}
+
+div#addProduct input:focus, div#addProduct select:focus, div#addProduct textarea:focus {
+    box-shadow: 0 0 0 0.2rem rgba(234, 125, 125, .4);
+    border: 1px solid rgba(234, 125, 125, .4);
+}
+
+/*
+* MODAL EDITAR PRODUTO
+*/
+
+div#editProduct, div#editProduct input, div#editProduct select#categoriaProdutoEdit, div#editProduct textarea#descricaoProdutoEdit {
+    font-size: 1.25rem;
+}
+
+div#editProduct label#insertPhotosInputLabelEdit {
+    left: 15px;
+    right: 15px;
+}
+
+div#editProduct textarea#descricaoProdutoEdit {
+    resize: none;
+}
+
+div#editProduct input:focus, div#editProduct select#categoriaProdutoEdit:focus, div#editProduct textarea#descricaoProdutoEdit:focus {
+    box-shadow: 0 0 0 0.2rem rgba(234, 125, 125, .4);
+    border: 1px solid rgba(234, 125, 125, .4);
+}

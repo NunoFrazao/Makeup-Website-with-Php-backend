@@ -1,0 +1,14 @@
+div#verMaisMassagemDescricao textarea#massagemDescricaoVerMais {
+    font-size: 1.25rem;
+    resize: none;
+}
+
+div#editarMassagemDescricao textarea#massagemDescricaoEditar {
+    font-size: 1.25rem;
+    resize: none;
+}
+
+div#editarMassagemDescricao textarea#massagemDescricaoEditar:focus {
+    box-shadow: 0 0 0 0.2rem rgba(234, 125, 125, .4);
+    border: 1px solid rgba(234, 125, 125, .4);
+}

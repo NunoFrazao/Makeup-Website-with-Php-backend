@@ -1,0 +1,15 @@
+#videopromocional{
+    text-align: center;
+    width: 75%;
+    height: 75%;
+    border-radius: 10px;
+}
+
+@media(max-width:992px){
+    #videopromocional{
+        width: 100%;
+        margin-top: 25%;
+    }
+}
+
+

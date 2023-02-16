@@ -1,0 +1,87 @@
+div#div-marcacoes {
+    background: white;
+    border-radius: 5px;
+}
+
+div#div-marcacoes h1 {
+    color: #ea7d7d;
+}
+
+div#div-marcacoes ul#tabs {
+    font-size: 1.5rem;
+}
+
+div#div-marcacoes ul#tabs li a {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #ea7d7d;
+}
+
+div#div-marcacoes ul#tabs li a:hover {
+    color: #bb3838;
+}
+
+div#div-marcacoes ul#tabs li a.active {
+    position: relative;
+    color: #bb3838;
+    font-weight: bold;
+}
+
+div#div-marcacoes ul#tabs li a.active::after {
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: #ea7d7d;
+    width: 10%;
+    height: 2px;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+div#div-marcacoes input#searchMarcacaoPendente:focus, div#div-marcacoes input#searchMarcacaoConfirmada:focus {
+    box-shadow: 0 0 0 0.2rem rgba(234, 125, 125, .4);
+    border: 1px solid rgba(234, 125, 125, .4);
+}
+
+div#div-marcacoes table {
+    font-size: 1.1rem;
+}
+
+div#div-marcacoes table tbody tr:hover {
+    background-color: #efdede;
+}
+
+div#div-marcacoes table th {
+    color: #ea7d7d;
+}
+
+div#div-marcacoes table tbody img.fotoPerfil {
+    object-fit: cover;
+}
+
+div#div-marcacoes table div.modalTrigger {
+    display: inline-block;
+    padding: 0 3px;
+}
+
+div#div-marcacoes table div.modalTrigger i {
+    font-size: 1.5rem;
+    color: #ea7d7d;
+    cursor: pointer;
+}
+
+div#div-marcacoes table div.modalTrigger i:hover {
+    color: #ce4646;
+}
+
+/* PAGINAÇÃO DAS TABELAS */
+
+nav.table-pagination li.page-item.active a.page-link {
+    background-color: #ce4646;
+    border-color: #ce4646;
+}
+
+nav.table-pagination a.page-link {
+    color: #ce4646;
+}

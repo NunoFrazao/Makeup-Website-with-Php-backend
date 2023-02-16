@@ -1,0 +1,68 @@
+div#div-loja {
+    background-color: white;
+    border-radius: 5px;
+}
+
+div#div-loja h1 {
+    color: #ea7d7d;
+}
+
+div#div-loja span#totalProdutos {
+    font-size: 1.25rem;
+    color: #ccc;
+}
+
+div#div-loja div#addProductBtnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+div#div-loja button#addProduto {
+    float: right;
+    background-color: #ea7d7d;
+    color: white;
+    transition: all .3s;
+}
+
+div#div-loja button#addProduto:hover {
+    background-color: #ce4646;
+    transform: translateY(-2px);
+}
+
+div#div-loja button#addProduto:focus {
+    box-shadow: 0 0 0 0.2rem rgba(234, 125, 125, .4);
+    border: 1px solid rgba(234, 125, 125, .4);
+}
+
+div#div-loja input#searchLoja:focus {
+    box-shadow: 0 0 0 0.2rem rgba(234, 125, 125, .4);
+    border: 1px solid rgba(234, 125, 125, .4);
+}
+
+div#div-loja table#listaProdutos {
+    font-size: 1.1rem;
+}
+
+div#div-loja table#listaProdutos th {
+    color: #ea7d7d;
+}
+
+div#div-loja table#listaProdutos tbody tr:hover {
+    background-color: #efdede;
+}
+
+div#div-loja table#listaProdutos tbody div.tableButtons {
+    display: inline-block;
+    padding: 0 3px;
+}
+
+div#div-loja table#listaProdutos tbody div.tableButtons i {
+    cursor: pointer;
+    color: #ea7d7d;
+    font-size: 1.5rem;
+}
+
+div#div-loja table#listaProdutos tbody div.tableButtons i:hover {
+    color: #ce4646;
+}

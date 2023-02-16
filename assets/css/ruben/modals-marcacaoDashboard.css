@@ -1,0 +1,102 @@
+div.modal-header h5 {
+    color: #ea7d7d;
+}
+
+/*
+* MODAL CONFIRMAR MARCACAO
+*/
+
+div#confirmarMarcacao div.modal-body p {
+    font-size: 1.20rem;
+}
+
+div#confirmarMarcacao div.modal-body small, div#confirmarMarcacao div.modal-body div.invalid-feedback {
+    font-size: 1rem;
+}
+
+div#confirmarMarcacao div.modal-body input#inputDataMarcacao:focus {
+    border-color: #bb3838;
+    box-shadow: 0 0 0 0.2rem rgba(234, 125, 125, .4);
+}
+
+/*
+* MODAL INFORMAÇÃO DO PEDIDO
+*/
+
+div#modalMarcacaoMain {
+    min-width: 1350px;
+}
+
+div.modal-marcacao-info {
+    font-size: 1.25rem;
+}
+
+div.modal-marcacao-info div.infoCliente img#fotoPerfil {
+    object-fit: cover;
+}
+
+div.modal-marcacao-info div.infoCliente span#nomeUtilizador {
+    font-size: 1.5rem;
+}
+
+div.modal-marcacao-info div.resumo {
+    position: relative;
+    overflow-y: hidden;
+}
+
+div.modal-marcacao-info div.resumo ul#listaServicos {
+    font-size: 1.3rem;
+}
+
+div.modal-marcacao-info div.resumo ul#listaServicos li {
+    padding-bottom: 1.5rem;
+}
+
+div.modal-marcacao-info div.resumo p#valorTotal {
+    position: absolute;
+    bottom: 0px;
+    font-size: 1.5rem;
+}
+
+div.modal-marcacao-info div.resumo p#valorTotal span#valor{
+    color: #bb3838;
+}
+
+div.modal-marcacao-info h2.subTitle {
+    font-size: 1.7rem;
+    color: #bb3838;
+}
+
+/*
+* BOTÕES DAS MODALS
+*/
+
+div.modal-footer button {
+    padding: 6px 30px;
+    transition: all .3s;
+}
+
+div.modal-footer button.modalBtn {
+    background-color: #ea7d7d;
+    color: white;
+}
+
+div.modal-footer button.modalBtn:hover {
+    background-color: #ce4646;
+    transform: translateY(-2px);
+}
+
+div.modal-footer button.dismissBtn {
+    background-color: white;
+    color: #ea7d7d;
+    border: 1px solid #ea7d7d;
+}
+
+div.modal-footer button.dismissBtn:hover {
+    transform: translateY(-2px);
+}
+
+div.modal-footer button.modalBtn:focus,
+div.modal-footer button.dismissBtn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(234, 125, 125, .4)
+}

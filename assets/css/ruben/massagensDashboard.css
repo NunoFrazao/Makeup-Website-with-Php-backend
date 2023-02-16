@@ -1,0 +1,38 @@
+div#div-massagensDashboard {
+    background-color: white;
+    border-radius: 5px;
+}
+
+div#div-massagensDashboard h1, div#div-massagensDashboard table thead th {
+    color: #ea7d7d;
+}
+
+div#div-massagensDashboard table thead {
+    font-size: 1.25rem;
+}
+
+div#div-massagensDashboard table tbody {
+    font-size: 1.1rem;
+}
+
+div#div-massagensDashboard table tbody tr:hover {
+    background-color: #efdede;
+}
+
+div#div-massagensDashboard table tbody td.nomeSubservico {
+	max-width: 300px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+div#div-massagensDashboard table tbody div.tableButtons {
+    display: inline-block;
+    color: #ea7d7d;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+div#div-massagensDashboard table tbody div.tableButtons:hover {
+    color: #ce4646;
+}

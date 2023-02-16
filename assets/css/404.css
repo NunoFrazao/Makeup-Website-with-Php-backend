@@ -1,0 +1,34 @@
+@font-face {
+	src: url("../fonts/HelveticaNeue\ Light.ttf");
+	font-family: "Helvetica Neue";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient(125deg, #fff7f6, #ffffff);
+}
+
+div#errorContainer {
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #343434;
+}
+
+div#errorContainer h1{
+    font-size: 20em;
+    font-weight: bolder;
+    background: url(../img/404.jpg) center no-repeat;
+    background-size: cover;
+    margin: 0;
+    line-height: 100%;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}

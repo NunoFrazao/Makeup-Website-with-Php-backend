@@ -1,0 +1,55 @@
+.divInfo{
+  float: left;
+  margin-left: 50px;
+  text-align: justify;
+}
+#divImagem{
+  float: right;
+  padding-top: 5%;
+  position: relative;
+}
+.imgCasamento{
+  width: 300px;
+  height: 421px;
+  border-radius: 20px;
+  margin-left: 50px;
+  object-fit: cover;
+
+}
+.navBtns{
+  margin-top: 20px;
+  margin-left: 64px;
+  border-radius: 20px;
+  background-color: #bb3838;
+  color: white;
+  border-style: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: transform .2s;
+}
+#btnSeguinte{
+  margin-left: 15px;
+}
+#btnMarcacoes{
+  margin-left: 225px;
+}
+
+.navBtns:hover{
+  box-shadow: 0 0 0 0.2rem rgba(197, 36, 36, .25);
+}
+
+@media (max-width: 770px){
+  div.divInfo{
+    margin-left: 0px;
+  }
+
+  div#divImagem{
+    margin-right: -40px;
+  }
+  div#divButton{
+    margin-left: 105px;
+  }
+  div#btnMarcacoes{
+    margin-left: -50px;
+  }
+}
